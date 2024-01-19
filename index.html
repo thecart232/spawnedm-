@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://i.ibb.co/h15XJwc/2023-12-31-11-20-26.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: 'Open Sans', sans-serif;
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+            background: -webkit-linear-gradient(left, blue, purple);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .button {
+            display: block;
+            width: 200px;
+            height: 50px;
+            margin: 20px auto;
+            text-align: center;
+            border-radius: 10px;
+            color: black;
+            font-weight: bold;
+            line-height: 50px;
+            text-decoration: none;
+            background-color: white;
+            border: 1px solid #ccc;
+        }
+        .button:hover {
+            background-color: #f5f5f5;
+        }
+        .button img {
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        .store-button {
+            background-color: green;
+        }
+        .store-button:hover {
+            background-color: darkgreen;
+        }
+        .item-button {
+            display: block;
+            width: 200px;
+            height: 50px;
+            margin: 20px auto;
+            text-align: center;
+            border-radius: 10px;
+            color: black;
+            font-weight: bold;
+            line-height: 50px;
+            text-decoration: none;
+            background-color: yellow;
+            border: 1px solid #ccc;
+        }
+        .item-button:hover {
+            background-color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <h1>spawnedmc</h1>
+    <a href="https://dsc.gg/spawnedmc" class="button" target="_blank">
+        <img src="https://i.ibb.co/T4qzd8y/4789-discord-icon.png" alt="Discord Icon" width="24" height="24">Discord
+    </a>
+    <button class="button" onclick="openEmailForm()">📧Email Provino</button>
+    <button class="item-button" onclick="goToItemPage()">Item</button>
+    <a href="https://spawnedmc.store.playerlands.com" class="button store-button" target="_blank">
+        🛒Store
+    </a>
+
+    <script>
+        function openEmailForm() {
+            window.location.href = "mailto:spawnedmc@outlook.it?subject=Provino&body=Nome Discord:%0APerché vuole diventare staffer:";
+        }
+
+        function goToItemPage() {
+            window.location.href = "item.html";
+        }
+    </script>
+</body>
+</html>
